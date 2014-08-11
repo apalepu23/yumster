@@ -21,7 +21,6 @@
 		<% if place.photos.present? %>
 			<div class="col-xs-2 pull-right">
 				<%= image_tag place.photos.first.picture, :class => "thumb", :title => place.photos.first.caption %>
-				<%= place.photos.first.inspect %>
 			</div>
 		<% end %>
 	</div>

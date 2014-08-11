@@ -8,7 +8,8 @@ class PictureUploader < CarrierWave::Uploader::Base
 
   # Choose what kind of storage to use for this uploader:
   # storage :file
-  storage :fog
+  #storage :fog
+  storage = Fog::Storage.new(:provider => 'AWS', :aws_access_key_id => ENV['AWS_ACCESS_KEY'], :aws_secret_access_key => ENV['AWS_SECRET_KEY'])
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:

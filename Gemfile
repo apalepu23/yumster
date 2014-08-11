@@ -16,7 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 gem "geocoder" 
 gem "figaro"
 gem "carrierwave"
-gem "fog", "~> 1.3.1"
+gem 'nokogiri', '~>1.5.0'
+gem "fog"
 
 gem 'will_paginate', '~> 3.0.5'
 
